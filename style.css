@@ -5,47 +5,56 @@ body {
   align-items: center;
   height: 100vh;
   background: linear-gradient(to bottom left, #ff99cc 0%, #cc00ff 94%);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .frame {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  width: 90%;
-  max-width: 400px;
+  width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .form_details {
-  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: grey;
+  text-align: left;
+  padding-left: 10px;
 }
 
-.input_field,
-.input_field_2 {
-  margin-top: 5px;
+.input_field {
+  padding-left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.input_field input,
+.input_field input {
+  padding: 10px;
+  height: 20px;
+  font-size: 12px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  flex: 1;
+  width: calc(50% - 10px);
+}
+
 .input_field_2 textarea {
-  width: calc(100% - 20px);
+  font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   font-size: 12px;
   border: 2px solid grey;
   border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.input_field input {
-  height: 20px;
-}
-
-.input_field_2 textarea {
+  flex: 1;
+  width: calc(100% - 20px);
   height: 130px;
   resize: none;
 }
@@ -53,7 +62,7 @@ body {
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .button button {
